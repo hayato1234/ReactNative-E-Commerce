@@ -6,6 +6,7 @@ import { createDrawerNavigator } from "react-navigation-drawer";
 import Constants from "expo-constants";
 import Home from "./HomeComponent";
 import ItemDetail from "./ItemDetailComponent";
+import About from "./AboutComponent";
 
 const HomeNavigator = createStackNavigator(
   {
@@ -26,9 +27,27 @@ const HomeNavigator = createStackNavigator(
   }
 );
 
+const AboutNavigator = createStackNavigator(
+  {
+    About: { screen: About },
+  },
+  {
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: "#009C9E",
+      },
+      headerTintColor: "#fff",
+      headerTitleStyle: {
+        color: "#fff",
+      },
+    },
+  }
+);
+
 const MainNavigator = createDrawerNavigator(
   {
     Home: { screen: HomeNavigator },
+    About: { screen: AboutNavigator },
   },
   {
     defaultNavigationOptions: {
