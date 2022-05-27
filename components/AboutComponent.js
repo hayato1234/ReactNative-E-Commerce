@@ -45,7 +45,7 @@ function Points() {
       <Text>
         You get RE Green points for buying, offering and donating items. You can
         use the points to purchase our items or NFT tokens. Our NFT tokens are
-        managed by 100% renewable sources.
+        managed by 100% renewable resources.
       </Text>
     </Card>
   );
